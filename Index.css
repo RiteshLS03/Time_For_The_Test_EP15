@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+Normal CSS 
+
+SCSS
+Inline CSS
+Component Libraries - Material UI , Base UI , ANT , Chakra UI and many more
+Styled Components
+
+  Tailwind CSS Framework
+
+    - CSS on the go (in the same file)
+    - resuability 
+    - less bundle size 
+    - Flexible UI (Customization)
+
+ */
+
+
+
+ :root{
+    --font-family:'Montserrat', sans-serif , 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}

@@ -43,9 +43,9 @@ const MainRestaurant = () => {
   ) : (
     <>
       {/* Got help from the git repo CHE/NA */}
-      <div className="sm:mx-auto:px-auto mx-40">
+      <div className="sm:mx-auto:px-auto mx-32">
         <div className="restaurant_summary">
-          <div className="main_restaurant_restaurant-header sm:mx-4 md:mx-4 lg:mx-20 xl:mx-20 2xl:mx-56">
+          <div className="main_restaurant_restaurant-header sm:mx-4 md:mx-4 lg:mx-20 xl:mx-20 2xl:mx-32">
             <div className="info_left">
               <h2>{restaurant?.name}</h2>
               <h5 style={{ color: "#7e808c" }} className="text-sm">
@@ -65,7 +65,7 @@ const MainRestaurant = () => {
             </div>
           </div>
           {/* Price and Timing */}
-          <div className="main_restaurant_restaurant-body sm:mx-4md:mx-4 lg:mx-20 xl:mx-20 2xl:mx-56">
+          <div className="main_restaurant_restaurant-body sm:mx-4md:mx-4 lg:mx-20 xl:mx-20 2xl:mx-32">
             <div className="main_restaurant_restaurant-body_upper sm:mx-4">
               <h3 className="text-lg ">
                 <AiOutlineClockCircle className="mx-2" />
@@ -79,7 +79,7 @@ const MainRestaurant = () => {
           </div>
         </div>
         {/* restaurant lists */}
-        <div className="restaurant_lists flex justify-between mx-24">
+        <div className="restaurant_lists flex justify-between mx-24 sm:mx-4 md:mx-4">
           <div className="menu-items-container">
             <div className="menu-title-wrap">
               <h3 className="menu-title">Recommended</h3>

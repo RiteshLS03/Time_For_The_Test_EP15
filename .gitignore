@@ -2,3 +2,4 @@
 dist
 node_modules
 # if we click "add+" button it dispatch's an action which call's a reducer function which updates slice of our redux-store and then to read it use selector HOOK and what is a hook end of the day ? yeah! it's normaj js function
+/coverage

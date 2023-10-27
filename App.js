@@ -7,11 +7,10 @@ import {
   About,
   Error,
   MainRestaurant,
-  ShimmarUI,
 } from "./src/Components/Index";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom"; // First , Need to push to the repo
 import Profile from "./src/Components/profile";
-import ShimmarUI from "./src/Components/Index";
+// import ShimmarUI from "./src/Components/Index";
 import { ShimmarCard } from "./src/Components/ShimmarUI/ShimmarUI";
 import UserContext from "./src/utils/UserContext";
 // import Instamart from "./src/Components/Instamart";

@@ -6,6 +6,7 @@ export const MAIN_Restaurnat_API_URL = "https://www.swiggy.com/dapi/menu/pl?page
 // menu items api card type key
 export const MENU_ITEM_TYPE_KEY = "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory";
 export const RESTAURANT_TYPE_KEY = "type.googleapis.com/swiggy.presentation.food.v2.Restaurant";
+export const EmptyCartIMG = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,e_trim/cart_empty_ipmau1"
 
 // export const restaurantList = []
 //  [

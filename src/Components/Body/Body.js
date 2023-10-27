@@ -91,7 +91,7 @@ console.log(json);
            return ( 
             <Link to={"/restaurant/"+restaurant?.info?.id} key={restaurant?.info?.id}>
               <div className="body-rest" >
-              <RestaurantCard  restaurant={...restaurant}  />
+              <RestaurantCard  restaurant={restaurant}  />
               </div>
             </Link>
            )

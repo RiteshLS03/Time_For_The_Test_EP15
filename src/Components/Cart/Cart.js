@@ -1,11 +1,13 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import EmptyCart from "./EmptyCart";
 
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
   console.log(cartItems);
 
-  return (
+   return (cartItems == 0)?<EmptyCart/>
+    :(
     <div className="">
       {cartItems.map((item) => {
         return (

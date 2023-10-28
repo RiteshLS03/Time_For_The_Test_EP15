@@ -38,10 +38,10 @@ const Menu = () => {
         <li className="flex items-center md:text-sm:px-2:mx-4 md:p-2  hover:text-[#fc8019]">
           <Link to="/Instamart">Instamart</Link>
         </li>
-        <li className="flex items-center cursor-pointer  hover:text-[#fc8019]">
-          <Link className="px-2" to={"/cart"}>
-            <p className="flex">
-              <AiOutlineShoppingCart size={25} /> {(cartItems.length === 0) ? null : cartItems.length}
+        <li className="flex items-center cursor-pointer">
+          <Link className="px-2 " to={"/cart"}>
+            <p className="flex" style={{color:(cartItems.length > 0) && "#60b246" } } >
+              <AiOutlineShoppingCart size={25}  /> {(cartItems.length === 0) ? null : cartItems.length}
             </p>
           </Link>
         </li>

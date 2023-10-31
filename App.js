@@ -1,13 +1,6 @@
 import React, { lazy, Suspense, useState } from "react";
 import ReactDOM from "react-dom/client";
-import {
-  Header,
-  Footer,
-  Body,
-  About,
-  Error,
-  MainRestaurant,
-} from "./src/Components/Index";
+import {Header,Footer,Body,About, MainRestaurant,} from "./src/Components/Index";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom"; // First , Need to push to the repo
 import Profile from "./src/Components/profile";
 // import ShimmarUI from "./src/Components/Index";

@@ -51,7 +51,7 @@ const Menu = () => {
         >
           {isLoggedIn ? (
             <button onClick={() => setIsLoggedIn(false)}>
-              <h6 className="text-xs">{user.name}</h6>Logout
+              <h6 className="text-xs"></h6>Logout
             </button>
           ) : (
             <button onClick={() => setIsLoggedIn(true)}>Login</button>

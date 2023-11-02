@@ -6,10 +6,9 @@ import Profile from "../profile";
 const About = () => {
     return(
         <>
-        <h1>About US</h1>
-        <Profile name={"Ritesh"}/>
-        <ProfileClass name={"Ritesh2"}/>
-        {/* push */}
+        <div>
+            
+        </div>
         </>
     )
 }

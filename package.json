@@ -2,7 +2,6 @@
   "name": "practice-of-swiggy-clone",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "parcel index.html && parcel watch index.html",
     "test": "jest",

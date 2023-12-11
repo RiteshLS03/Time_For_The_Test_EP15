@@ -24,7 +24,7 @@ function Body() {
       const json = await response.json();
       console.log(json);
       async function checkJsonData(jsondata) {
-        for (i = 0; i < jsondata?.data?.cards.length; i++) {
+        for (var i = 0; i < jsondata?.data?.cards.length; i++) {
           let checkData =
             json?.data?.cards[i]?.card?.card?.gridElements?.infoWithStyle
               ?.restaurants;
@@ -47,8 +47,20 @@ function Body() {
   if (!online) {
     <h1>🔴Sorry , please check your internet connection</h1>;
   }
-
   const { user, setUser } = useContext(UserContext);
+
+  btnClick = () => {
+    // need to filter the data
+    const data = filterData(searchText, allRestaurants);
+    // and set it to the hook
+    setFilteredRestaurants(data);
+  };
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key == "Enter") {
+      btnClick();
+    }
+  });
 
   return (
     <>
@@ -65,13 +77,8 @@ function Body() {
             }}
           />
           <button
-            className="border-1 relative left-32 "
-            onClick={() => {
-              // need to filter the data
-              const data = filterData(searchText, allRestaurants);
-              // and set it to the hook
-              setFilteredRestaurants(data);
-            }}
+            className="border-1 relative left-32 inp-btn"
+            onClick={btnClick}
           >
             <AiOutlineSearch />
           </button>

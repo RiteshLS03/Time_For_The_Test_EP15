@@ -2,7 +2,7 @@ export const IMG_CDN_LINK = "https://res.cloudinary.com/swiggy/image/upload/fl_l
 export const ITEM_IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/";
 // Aurangabad Location URL
 export const SwiggyAPI_URL = "https://instafood.onrender.com/api/restaurants?lat=19.8644542&lng=75.3557927";
-export const MAIN_Restaurnat_API_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=19.8644542&lng=75.3557927&restaurantId="
+export const MAIN_Restaurnat_API_URL = "https://instafood.onrender.com/api/menu?&lat=19.8644542&lng=75.3557927&restaurantId="
 
 // menu items api card type key
 export const MENU_ITEM_TYPE_KEY = "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory";

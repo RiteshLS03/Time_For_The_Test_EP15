@@ -49,18 +49,12 @@ function Body() {
   }
   const { user, setUser } = useContext(UserContext);
 
-  btnClick = () => {
+  const btnClick = () => {
     // need to filter the data
     const data = filterData(searchText, allRestaurants);
     // and set it to the hook
     setFilteredRestaurants(data);
   };
-
-  document.addEventListener("keydown", function (e) {
-    if (e.key == "Enter") {
-      btnClick();
-    }
-  });
 
   return (
     <>
@@ -74,6 +68,9 @@ function Body() {
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
+            }}
+            onKeyDown={(e) => {
+              e.key == "Enter" ? btnClick() : "";
             }}
           />
           <button

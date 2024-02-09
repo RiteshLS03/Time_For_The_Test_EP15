@@ -7,7 +7,7 @@ import useOnline from "../../utils/useOnline";
 import Instamart from "../Instamart";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
 import UserContext from "../../utils/UserContext";
-import { AiOutlineShoppingCart , AiOutlineHome } from "react-icons/ai";
+import { AiOutlineShoppingCart, AiOutlineHome } from "react-icons/ai";
 import { useSelector } from "react-redux";
 
 const Menu = () => {
@@ -24,9 +24,14 @@ const Menu = () => {
     <>
       <ul className="flex py-2 gap-4 text-[#3D4152] font-bold sm:text-sm md:text-sm:px-2:mx-2">
         <li className="flex items-center md:text-sm:px-2:mx-2 md:p-2  hover:text-[#fc8019]">
-          <Link className="flex items-center mx-1" to="/"><AiOutlineHome className="mx-2" size={25}/>Home</Link>
+          <Link className="flex items-center mx-1" to="/">
+            <AiOutlineHome className="mx-2" size={25} />
+            Home
+          </Link>
         </li>
-        <li className="flex items-center md:text-sm:px-2:mx-4 md:p-2  hover:text-[#fc8019]">Food</li>
+        <li className="flex items-center md:text-sm:px-2:mx-4 md:p-2  hover:text-[#fc8019]">
+          Food
+        </li>
         <li className="flex items-center md:text-sm:px-2:mx-4 md:p-2  hover:text-[#fc8019]">
           <Link
             style={{ textDecoration: "none", color: "inherit" }}
@@ -40,8 +45,12 @@ const Menu = () => {
         </li>
         <li className="flex items-center cursor-pointer">
           <Link className="px-2 " to={"/cart"}>
-            <p className="flex" style={{color:(cartItems.length > 0) && "#60b246" } } >
-              <AiOutlineShoppingCart size={25}  /> {(cartItems.length === 0) ? null : cartItems.length}
+            <p
+              className="flex"
+              style={{ color: cartItems.length > 0 && "#60b246" }}
+            >
+              <AiOutlineShoppingCart size={25} />
+              {cartItems.length === 0 ? null : cartItems.length}
             </p>
           </Link>
         </li>
